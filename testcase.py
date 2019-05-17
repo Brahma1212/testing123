@@ -11,14 +11,10 @@ class PythonOrgSearch(unittest.TestCase):
         desired_caps['platformVersion'] = '9'
         desired_caps['deviceName'] = 'auto'
         # Returns abs path relative to this file and not cwd
-        # desired_caps['app'] = 
-os.path.abspath(os.path.join(os.path.dirname(__file__),'apps/Chess 
-Free.apk'))
+        # desired_caps['app'] = os.path.abspath(os.path.join(os.path.dirname(__file__),'apps/Chess Free.apk'))
         desired_caps['appPackage'] = 'com.android.chrome'
-        desired_caps['appActivity'] = 
-'com.google.android.apps.chrome.Main'
-        self.driver = webdriver.Remote('http://localhost:4723/wd/hub', 
-desired_caps)
+        desired_caps['appActivity'] = 'com.google.android.apps.chrome.Main'
+        self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 
     def test_google_chrome_app(self):
         login_main_page = page.MainPage(self.driver)
