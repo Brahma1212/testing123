@@ -7,7 +7,6 @@ class MainPageLocators(object):
     NEXT_BUTTON = (By.ID,"com.android.chrome:id/next_button")
     SIGN_IN_CHROME = (By.XPATH, "//android.widget.TextView[@text='Sign in to Chrome']")
 	
-
 class SearchResultsPageLocators(object):
     """A class for search results locators. All search results locators should come here"""
     pass
