@@ -33,7 +33,7 @@ class MainPage(object):
             element.click()
 
 
-class SearchResultsPage(BasePage):
+class SearchResultsPage():
     """Search results page action methods come here"""
 
     def is_results_found(self):
